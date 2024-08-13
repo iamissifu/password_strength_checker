@@ -1,31 +1,12 @@
-/* Simple and bright design */
-
-/* Global styles */
-body {
+   /* Simple and bright design */
+   body {
     background-color: #f9f9f9;
     font-family: Arial, sans-serif;
-    font-size: 16px; /* added a default font size */
   }
-  
-  /* Responsive typography */
-  @media (max-width: 768px) { /* tablet */
-    body {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 480px) { /* mobile */
-    body {
-      font-size: 12px;
-    }
-  }
-  
-  h6 {
+  h6{
     color: #333;
     text-align: center;
   }
-  
-  /* Container styles */
   .container {
     max-width: 400px;
     margin: 40px auto;
@@ -35,56 +16,30 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Responsive container styles */
-  @media (max-width: 768px) { /* tablet */
-    .container {
-      max-width: 300px;
-      margin: 20px auto;
-    }
-  }
-  
-  @media (max-width: 480px) { /* mobile */
-    .container {
-      max-width: 250px;
-      margin: 10px auto;
-    }
-  }
-  
-  /* Form group styles */
   .form-group {
     margin-bottom: 20px;
   }
-  
-  /* Password policies styles */
   .password-policies {
     margin-top: 20px;
   }
-  
   .password-policy {
     font-size: 14px;
     color: #fc0606;
   }
-  
   .password-policy.met {
-    color: green;
-  }
-  
-  /* Password strength bar styles */
+  color: green;
+}
   #password-strength-bar {
     height: 10px;
     border-radius: 5px;
     background-color: #ccc;
     overflow: hidden;
   }
-  
   #password-strength-bar-inner {
     height: 100%;
     background-color: #337ab7;
     transition: width 0.5s;
   }
-  
-  /* Password alert styles */
   #password-alert {
     font-size: 14px;
     color: #FF9800;
