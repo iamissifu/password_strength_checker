@@ -1,0 +1,47 @@
+   /* Simple and bright design */
+   body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  h6{
+    color: #333;
+    text-align: center;
+  }
+  .container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .password-policies {
+    margin-top: 20px;
+  }
+  .password-policy {
+    font-size: 14px;
+    color: #fc0606;
+  }
+  .password-policy.met {
+  color: green;
+}
+  #password-strength-bar {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    overflow: hidden;
+  }
+  #password-strength-bar-inner {
+    height: 100%;
+    background-color: #337ab7;
+    transition: width 0.5s;
+  }
+  #password-alert {
+    font-size: 14px;
+    color: #FF9800;
+    margin-top: 10px;
+  }

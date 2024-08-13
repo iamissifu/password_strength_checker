@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Strength Checker and Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <h3>Password Strength Checker and Generator</h3> 
+    <form>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="form-control" oninput="checkPasswordStrength()" placeholder="Enter password">
+        <label for="show-password">Show password</label>
+        <input type="checkbox" id="show-password" />
+        <div id="password-strength-bar">
+          <div id="password-strength-bar-inner" style="width: 0%;"></div>
+        </div>
+        <div id="password-alert"></div>
+      </div>
+      <hr>
+      <h6>OR</h6>
+      <div class="form-group text-center">
+        <button type="button" class="btn btn-primary " onclick="generateStrongPassword()">Generate Strong Password</button>
+      </div>
+      <div class="password-policies">
+        <p id="policy-length" class="password-policy">Your password has At least 8 characters</p>
+        <p id="policy-uppercase" class="password-policy">Your password has At least 1 uppercase letter</p>
+        <p id="policy-lowercase" class="password-policy">Your password has At least 1 lowercase letter</p>
+        <p id="policy-number" class="password-policy">Your password has At least 1 number</p>
+        <p id="policy-special" class="password-policy">Your password has At least 1 special character</p>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
